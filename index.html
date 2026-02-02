@@ -181,7 +181,7 @@
       color: #666;
     }
 
-    /* FORMULÁRIO */
+    /* FORM */
     .form-box {
       max-width: 520px;
       margin: auto;
@@ -202,15 +202,13 @@
       border-radius: 10px;
       border: 1px solid #ddd;
       font-size: 1rem;
-      font-family: 'Poppins', sans-serif;
     }
 
     textarea {
       resize: none;
       height: 120px;
     }
-
-    button {
+button {
       background: var(--pink);
       color: #fff;
       border: none;
@@ -250,43 +248,6 @@
       z-index: 999;
     }
 
-    /* FOOTER */
-    footer {
-      background: #000;
-      color: #ccc;
-      padding: 40px 20px;
-    }
-
-    .footer-container {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      text-align: center;
-    }
-
-    .socials {
-      display: flex;
-      gap: 20px;
-    }
-
-    .socials a {
-      color: #ccc;
-      font-size: 1.4rem;
-      transition: .3s;
-    }
-
-    .socials a:hover {
-      color: var(--pink);
-    }
-
-    .footer-info {
-      font-size: .9rem;
-      line-height: 1.8;
-    }
-
     /* RESPONSIVO */
     @media (max-width: 768px) {
       nav ul {
@@ -314,433 +275,36 @@
         font-size: 2rem;
       }
     }
-  </style>
-</head>
 
-<body>
-
-<header>
-  <div class="header-container">
-    <div class="logo">Pink<span>Models</span></div>
-    <div class="menu-toggle" id="menuToggle">☰</div>
-    <nav>
-      <ul id="menu">
-        <li><a href="#models">Modelos</a></li>
-        <li><a href="#apply">Seja um Modelo</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div>
-    <h1>Conectando Talentos ao Mundo da Moda</h1>
-    <p>Moda, publicidade e campanhas profissionais</p>
-    <a href="#apply" class="btn">Seja um Modelo</a>
-  </div>
-</section>
-
-<section id="models">
-  <div class="container">
-    <h2>Nossos Modelos</h2>
-    <div class="models-grid">
-      <div class="model-card">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-        <h3>Ana Souza</h3>
-        <p>Fashion • 1.75m</p>
-      </div>
-      <div class="model-card">
-        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d">
-        <h3>Lucas Martins</h3>
-        <p>Publicidade • 1.82m</p>
-      </div>
-      <div class="model-card">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb">
-        <h3>Beatriz Lima</h3>
-        <p>Comercial • 1.70m</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="apply" style="background:#f6f6f6">
-  <div class="container">
-    <h2>Seja um Modelo</h2>
-    <p>Envie seu perfil e entraremos em contato.</p>
-
-    <div class="form-box">
-      <form id="modelForm">
-        <input type="text" required placeholder="Nome completo">
-        <input type="email" required placeholder="E-mail">
-        <input type="text" required placeholder="Cidade / Estado">
-        <textarea required placeholder="Fale sobre você"></textarea>
-        <button type="submit">Enviar Perfil</button>
-        <p class="form-message" id="formMessage"></p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-container">
-    <div class="socials">
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-
-    <div class="footer-info">
-      <p>© 2026 Pink Models Agency</p>
-      <p>CNPJ: 12.345.678/0001-90</p>
-      <p>Desenvolvido por <strong>Tatiane Nascimento</strong></p>
-    </div>
-  </div>
-</footer>
-
-<a class="whatsapp"
-   href="https://wa.me/5511910526709?text=Olá%20vim%20pelo%20site%20da%20Pink%20Models%20Agency%20e%20gostaria%20de%20informações%20sobre%20modelos%20e%20parcerias."
-   target="_blank">
-   💬
-</a>
-
-<script>
-  const toggle = document.getElementById("menuToggle");
-  const menu = document.getElementById("menu");
-
-  toggle.addEventListener("click", function () {
-    menu.classList.toggle("active");
-  });
-
-  const form = document.getElementById("modelForm");
-  const msg = document.getElementById("formMessage");
-  const btn = form.querySelector("button");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    btn.textContent = "Enviando...";
-    btn.disabled = true;
-
-    setTimeout(function () {
-      msg.textContent =
-        "✔ Envio bem-sucedido! Recebemos seu perfil. Aguarde nosso contato.";
-      msg.style.display = "block";
-
-      form.reset(<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Pink Models Agency | Agência de Modelos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png"
-    href="https://cdn-icons-png.flaticon.com/512/2922/2922561.png">
-
-  <!-- FONTE -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- ÍCONES -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    :root {
-      --pink: #e91e63;
-      --pink-dark: #c2185b;
-      --gray: #f6f6f6;
-      --text: #222;
-      --success: #4CAF50;
-      --shadow: 0 15px 40px rgba(0,0,0,0.08);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: var(--text);
-      background: #fff;
-      line-height: 1.6;
-    }
-
-    /* HEADER */
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
+    /* FOOTER (ADICIONADO) */
+    footer {
       background: #000;
-      z-index: 1000;
-    }
-
-    .header-container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      color: #fff;
-      font-size: 1.6rem;
-      font-weight: 700;
-    }
-
-    .logo span {
-      color: var(--pink);
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
-    }
-
-    nav a {
       color: #ccc;
-      text-decoration: none;
-      font-size: .95rem;
-    }
-
-    nav a:hover {
-      color: var(--pink);
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 1.8rem;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    /* HERO */
-    .hero {
-      height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e")
-        center / cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .hero h1 {
-      color: #fff;
-      font-size: 2.6rem;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      color: #eee;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      background: var(--pink);
-      color: #fff;
-      padding: 14px 36px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: .3s;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: var(--pink-dark);
-      transform: translateY(-2px);
-    }
-
-    section {
-      padding: 100px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    h2 {
-      font-size: 2.2rem;
+    footer p {
+      font-size: 0.9rem;
       margin-bottom: 10px;
     }
 
-    section p {
-      max-width: 650px;
-      margin: 0 auto 40px;
-      color: #555;
-    }
-
-    /* MODELOS */
-    .models-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .model-card {
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .model-card img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-    }
-
-    .model-card h3 {
-      margin-top: 15px;
-    }
-
-    .model-card p {
-      margin-bottom: 20px;
-      color: #666;
-    }
-
-    /* FORMULÁRIO */
-    .form-box {
-      max-width: 520px;
-      margin: auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-    }
-
-    form {
+    .social-links {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    input, textarea {
-      padding: 14px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      font-size: 1rem;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    textarea {
-      resize: none;
-      height: 120px;
-    }
-
-    button {
-      background: var(--pink);
-      color: #fff;
-      border: none;
-      padding: 14px;
-      border-radius: 30px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    button:disabled {
-      background: #ccc;
-    }
-
-    .form-message {
-      display: none;
-      margin-top: 15px;
-      color: var(--success);
-      font-weight: 600;
-    }
-
-    /* WHATSAPP */
-    .whatsapp {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 60px;
-      height: 60px;
-      background: #25d366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      color: #fff;
-      font-size: 28px;
-      text-decoration: none;
-      box-shadow: 0 10px 25px rgba(0,0,0,.4);
-      z-index: 999;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #000;
-      color: #ccc;
-      padding: 40px 20px;
-    }
-
-    .footer-container {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
       gap: 20px;
-      align-items: center;
-      text-align: center;
+      margin-bottom: 15px;
     }
 
-    .socials {
-      display: flex;
-      gap: 20px;
-    }
-
-    .socials a {
+    .social-links a {
       color: #ccc;
       font-size: 1.4rem;
-      transition: .3s;
+      transition: 0.3s;
     }
 
-    .socials a:hover {
+    .social-links a:hover {
       color: var(--pink);
-    }
-
-    .footer-info {
-      font-size: .9rem;
-      line-height: 1.8;
-    }
-
-    /* RESPONSIVO */
-    @media (max-width: 768px) {
-      nav ul {
-        position: fixed;
-        top: 70px;
-        right: -100%;
-        background: #000;
-        width: 100%;
-        height: calc(100vh - 70px);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: .3s;
-      }
-
-      nav ul.active {
-        right: 0;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
+      transform: translateY(-3px);
     }
   </style>
 </head>
@@ -809,47 +373,46 @@
   </div>
 </section>
 
-<footer>
-  <div class="footer-container">
-    <div class="socials">
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-
-    <div class="footer-info">
-      <p>© 2026 Pink Models Agency</p>
-      <p>CNPJ: 12.345.678/0001-90</p>
-      <p>Desenvolvido por <strong>Tatiane Nascimento</strong></p>
-    </div>
-  </div>
-</footer>
-
 <a class="whatsapp"
    href="https://wa.me/5511910526709?text=Olá%20vim%20pelo%20site%20da%20Pink%20Models%20Agency%20e%20gostaria%20de%20informações%20sobre%20modelos%20e%20parcerias."
-   target="_blank">
-   💬
-</a>
+   target="_blank">💬</a>
+<footer>
+  <div class="social-links">
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <p>Desenvolvido por <strong>Tatiane Nascimento</strong></p>
+  <p>CNPJ: 12345678901</p>
+</footer>
 
 <script>
   const toggle = document.getElementById("menuToggle");
   const menu = document.getElementById("menu");
+  const menuLinks = menu.querySelectorAll("a");
 
-  toggle.addEventListener("click", function () {
+  toggle.addEventListener("click", () => {
     menu.classList.toggle("active");
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
   });
 
   const form = document.getElementById("modelForm");
   const msg = document.getElementById("formMessage");
   const btn = form.querySelector("button");
 
-  form.addEventListener("submit", function (e) {
+  form.addEventListener("submit", e => {
     e.preventDefault();
 
     btn.textContent = "Enviando...";
     btn.disabled = true;
 
-    setTimeout(function () {
+    setTimeout(() => {
       msg.textContent =
         "✔ Envio bem-sucedido! Recebemos seu perfil. Aguarde nosso contato.";
       msg.style.display = "block";
@@ -857,20 +420,7 @@
       form.reset();
       btn.textContent = "Enviado ✔";
 
-      setTimeout(function () {
-        btn.textContent = "Enviar Perfil";
-        btn.disabled = false;
-        msg.style.display = "none";
-      }, 4000);
-    }, 1500);
-  });
-</script>
-
-</body>
-    </html>);
-      btn.textContent = "Enviado ✔";
-
-      setTimeout(function () {
+      setTimeout(() => {
         btn.textContent = "Enviar Perfil";
         btn.disabled = false;
         msg.style.display = "none";
